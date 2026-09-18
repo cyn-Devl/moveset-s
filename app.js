@@ -11,7 +11,7 @@ function render(list) {
     card.className = 'card';
 
     card.innerHTML = `
-      ${m.image ? `<img src="${m.image}" alt="${m.name}">` : ''}
+      ${m.image ? `<img src="${m.image}" alt="${m.name}" onerror="this.remove()">` : ''}
       <div class="card-body">
         <div class="card-name">${m.name}</div>
         <div class="code-row">

@@ -10,8 +10,14 @@ function render(list) {
     const card = document.createElement('div');
     card.className = 'card';
 
+    const images = m.images || (m.image ? [m.image] : []);
+
+    const imagesHtml = images.map(src =>
+      `<img src="${src}" alt="${m.name}" loading="lazy" onerror="this.remove()">`
+    ).join('');
+
     card.innerHTML = `
-      ${m.image ? `<img src="${m.image}" alt="${m.name}" onerror="this.remove()">` : ''}
+      ${images.length ? `<div class="img-row">${imagesHtml}</div>` : ''}
       <div class="card-body">
         <div class="card-name">${m.name}</div>
         <div class="code-row">

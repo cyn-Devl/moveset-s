@@ -65,12 +65,23 @@ body {
   flex-direction: column;
 }
 
-.card img {
+.img-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 2px;
+}
+
+.img-row img {
   width: 100%;
   height: 120px;
   object-fit: cover;
   background: #0e0e0e;
   display: block;
+  flex-shrink: 0;
+}
+
+.img-row:has(img:only-child) img {
+  flex-shrink: 1;
 }
 
 .card-body {

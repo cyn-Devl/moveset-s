@@ -26,5 +26,5 @@ const movesets = [
     images: [
       "https://cdn.phototourl.com/free/2026-09-19-79fcd1c4-0c07-4947-8e15-dc019c5345e3.gif"
     ]
-    {,
+  },
 ];

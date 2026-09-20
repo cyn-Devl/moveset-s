@@ -31,7 +31,7 @@ const movesets = [
     name: "Rick prime",
     code: "KLUv/WBBNg1PACpTaA8q0IrIP...",
     images: [
-      "https://cdn.phototourl.com/free/2026-09-19-f86a3d12-c50d-4abc-92e9-7a4afaaae829.jpg"
+      "https://cdn.phototourl.com/free/2026-09-20-f5f3e9d1-9892-4a2a-aa07-0480a1cefc7e.gif"
     ]
   },
 ];
